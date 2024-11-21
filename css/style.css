@@ -1,25 +1,26 @@
 /* Estilo Geral */
 body {
-  font-family: 'Georgia', serif; /* Fonte com estilo rústico */
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5dc; /* Bege claro, remetendo ao campo */
-  color: #4b3621; /* Marrom, cor de terra */
+  background-color: #ffe6f2; /* Rosa claro para o fundo */
+  color: #4a004e; /* Roxo escuro para texto */
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-  background: #8b4513; /* Marrom sela, cor de couro */
+  background: #ff99cc; /* Rosa vibrante */
   color: white;
   padding: 1.5rem 0;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
   font-size: 2.8rem;
-  font-family: 'Courier New', monospace; /* Para um estilo rústico */
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: #ffd700; /* Dourado */
+  color: #ffe6f2; /* Rosa mais claro */
 }
 
 /* Seções */
@@ -54,21 +55,20 @@ main {
 section {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: rgba(255, 255, 224, 0.8); /* Bege suave translúcido */
-  border: 2px solid #deb887; /* Bege amadeirado */
+  background: rgba(255, 204, 229, 0.8); /* Rosa translúcido */
+  border: 2px solid #ff99cc; /* Rosa vibrante */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-  color: #8b4513; /* Marrom sela */
+  color: #b30059; /* Rosa escuro */
   margin-bottom: 1rem;
-  font-family: 'Georgia', serif;
 }
 
 section p, section ul {
   font-size: 1.1rem;
-  color: #4b3621; /* Tom escuro para contraste */
+  color: #4a004e; /* Roxo escuro */
 }
 
 ul {
@@ -79,9 +79,25 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Botões */
+button {
+  background-color: #ff80bf; /* Rosa médio */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60073; /* Rosa mais escuro */
+}
+
 /* Rodapé */
 footer {
-  background: #4b3621; /* Marrom escuro */
+  background: #b30059; /* Rosa escuro */
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -90,29 +106,14 @@ footer {
 }
 
 footer a {
-  color: #ffd700; /* Dourado */
+  color: #ff99cc; /* Rosa vibrante */
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Imagens de Fundo (com cavalo) */
-header {
-  background-image: url('https://via.placeholder.com/1500x300?text=Imagem+de+Cavalo');
-  background-size: cover;
-  background-position: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-section#home {
-  background-image: url('https://via.placeholder.com/1500x400?text=Cavalos+no+Campo');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  color: #ffe6f2; /* Rosa claro */
 }
 
 /* Responsividade */
